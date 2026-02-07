@@ -1,74 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nuvion Client – Impressum</title>
-    <link rel="icon" href="assets/icon.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - NUVION CLIENT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-    <div class="container header-inner">
-        <a class="brand" href="index.html">
-            <img src="assets/icon.png" alt="Nuvion Logo">
-            <div>
-                <div class="title">Nuvion Client</div>
-                <div class="sub">Impressum</div>
-            </div>
-        </a>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="team.html">Team</a>
-            <a href="datenschutz.html">Datenschutz</a>
-        </nav>
+<!-- Animated Background -->
+<canvas id="particles-canvas"></canvas>
+<div class="gradient-bg"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <span class="logo-text" data-text="NUVION">NUVION</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="devindex.html">Home</a></li>
+            <li><a href="devindex.html#features">Features</a></li>
+            <li><a href="devindex.html#download">Download</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
-</header>
+</nav>
 
-<main class="container">
-    <section class="page-title">
-        <h1>Impressum</h1>
-        <div class="hr"></div>
-    </section>
+<!-- Content Section -->
+<section style="padding-top: 150px; padding-bottom: 100px; min-height: 100vh;">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="section-header">
+                <h1 class="section-title">Impressum</h1>
+            </div>
 
-    <section class="section" style="padding-top:0;">
-        <div class="card prose">
-            <h2>Angaben gemäß § 5 TMG</h2>
-            <p>
-                <h4><strong></strong></h4>
-                <strong>Lars Schlich</strong>
-                <br>
-                <h4><strong>Anschrift</strong></h4>
-                Am Südermoor 4<br>
-                24888 Steinfeld<br>
-                Deutschland<br>
-                <h4><strong>Kontakt</strong></h4>
-            </p>
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 20px; padding: var(--spacing-lg); color: var(--color-text-secondary); line-height: 1.8;">
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem;">Angaben gemäß § 5 TMG</h2>
 
-            <h2>Kontakt</h2>
-            <p>E-Mail: lars.nuvionclient@gmail.com</p>
-            <p>Telefon: +49(0)152 03155086</p>
+                <p style="margin-bottom: 2rem;">
+                    <strong style="color: var(--color-text);">NUVION Client</strong><br>
+                    Musterstraße 123<br>
+                    12345 Musterstadt<br>
+                    Deutschland
+                </p>
 
-            <h2>Haftung für Links</h2>
-            <p>
-                Für Inhalte externer Links übernehmen wir keine Haftung. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
-            </p>
+                <h3 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">Kontakt</h3>
+                <p style="margin-bottom: 2rem;">
+                    E-Mail: kontakt@nuvionclient.com<br>
+                    Discord: discord.gg/nuvion
+                </p>
+
+                <h3 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+                <p style="margin-bottom: 2rem;">
+                    Lars Mustermann<br>
+                    Musterstraße 123<br>
+                    12345 Musterstadt
+                </p>
+
+                <h3 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">Haftungsausschluss</h3>
+
+                <h4 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Haftung für Inhalte</h4>
+                <p style="margin-bottom: 1rem;">
+                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+                </p>
+
+                <h4 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Haftung für Links</h4>
+                <p style="margin-bottom: 1rem;">
+                    Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                </p>
+
+                <h4 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Urheberrecht</h4>
+                <p style="margin-bottom: 1rem;">
+                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                </p>
+
+                <h4 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Minecraft & Mojang</h4>
+                <p>
+                    NUVION Client ist nicht mit Mojang Studios oder Microsoft verbunden oder wird von diesen unterstützt. Minecraft ist eine eingetragene Marke von Mojang Studios.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--spacing-md);">
+                <a href="devindex.html" class="btn btn-secondary">Zurück zur Startseite</a>
+            </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 
+<!-- Footer -->
 <footer class="footer">
-    <div class="container footer-inner">
-        <div class="footer-left">
-            <img src="assets/icon.png" alt="Nuvion Icon klein">
-            <div class="mini-note">© <span id="year"></span> Nuvion Client — All rights reserved.</div>
-        </div>
-        <div class="footer-links">
-            <a href="datenschutz.html">Datenschutz</a>
+    <div class="container">
+        <div class="footer-bottom" style="border-top: none;">
+            <p>&copy; 2026 Nuvion Client. Alle Rechte vorbehalten.</p>
+            <p class="footer-disclaimer">Nicht verbunden mit Mojang oder Microsoft</p>
         </div>
     </div>
 </footer>
 
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

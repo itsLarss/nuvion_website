@@ -1,10 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - NUVION CLIENT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- Animated Background -->
+<canvas id="particles-canvas"></canvas>
+<div class="gradient-bg"></div>
 
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <span class="logo-text" data-text="NUVION">NUVION</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="devindex.html">Home</a></li>
+            <li><a href="devindex.html#features">Features</a></li>
+            <li><a href="devindex.html#download">Download</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Content Section -->
+<section style="padding-top: 150px; padding-bottom: 100px; min-height: 100vh;">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="section-header">
+                <h1 class="section-title">Datenschutzerklärung</h1>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 20px; padding: var(--spacing-lg); color: var(--color-text-secondary); line-height: 1.8;">
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem;">1. Datenschutz auf einen Blick</h2>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Allgemeine Hinweise</h3>
+                <p style="margin-bottom: 1rem;">
+                    Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+                </p>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Datenerfassung auf dieser Website</h3>
+                <p style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-text);">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+                    Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
+                </p>
+
+                <p style="margin-bottom: 1rem;">
+                    <strong style="color: var(--color-text);">Wie erfassen wir Ihre Daten?</strong><br>
+                    Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.
+                </p>
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">2. Hosting</h2>
+
+                <p style="margin-bottom: 1rem;">
+                    Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.
+                </p>
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">3. Allgemeine Hinweise und Pflichtinformationen</h2>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Datenschutz</h3>
+                <p style="margin-bottom: 1rem;">
+                    Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+                </p>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Hinweis zur verantwortlichen Stelle</h3>
+                <p style="margin-bottom: 1rem;">
+                    Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br><br>
+                    NUVION Client<br>
+                    Musterstraße 123<br>
+                    12345 Musterstadt<br>
+                    E-Mail: kontakt@nuvionclient.com
+                </p>
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">4. Datenerfassung auf dieser Website</h2>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Server-Log-Dateien</h3>
+                <p style="margin-bottom: 1rem;">
+                    Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+                </p>
+                <ul style="margin-bottom: 1rem; margin-left: 2rem;">
+                    <li>Browsertyp und Browserversion</li>
+                    <li>verwendetes Betriebssystem</li>
+                    <li>Referrer URL</li>
+                    <li>Hostname des zugreifenden Rechners</li>
+                    <li>Uhrzeit der Serveranfrage</li>
+                    <li>IP-Adresse</li>
+                </ul>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Kontaktformular</h3>
+                <p style="margin-bottom: 1rem;">
+                    Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+                </p>
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">5. Plugins und Tools</h2>
+
+                <h3 style="color: var(--color-text); margin-bottom: 0.5rem; margin-top: 1.5rem;">Google Fonts</h3>
+                <p style="margin-bottom: 1rem;">
+                    Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.
+                </p>
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">6. Ihre Rechte</h2>
+
+                <p style="margin-bottom: 1rem;">
+                    Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung oder Löschung dieser Daten.
+                </p>
+
+                <h2 style="color: var(--color-primary); font-family: var(--font-display); margin-bottom: 1rem; margin-top: 2rem;">7. Client-Software</h2>
+
+                <p>
+                    Der NUVION Client sammelt keine personenbezogenen Daten. Die Software arbeitet lokal auf Ihrem Computer und sendet keine Nutzungsdaten an unsere Server. Automatische Updates werden über sichere Verbindungen durchgeführt.
+                </p>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--spacing-md);">
+                <a href="devindex.html" class="btn btn-secondary">Zurück zur Startseite</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom" style="border-top: none;">
+            <p>&copy; 2026 Nuvion Client. Alle Rechte vorbehalten.</p>
+            <p class="footer-disclaimer">Nicht verbunden mit Mojang oder Microsoft</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
