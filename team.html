@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <title>Nuvion Client – Team</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">
+            <img src="assets/icon.png" alt="Nuvion Logo">
+            <div>
+                <div class="title">Nuvion Client</div>
+                <div class="sub">Team</div>
+            </div>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="https://discord.gg/DEIN_INVITE" target="_blank" rel="noreferrer">Discord</a>
+            <a class="btn small ghost" href="impressum.html">Impressum</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="page-title">
+        <h1>Team</h1>
+        <div class="prose">Die Leute hinter dem Nuvion Client.</div>
+        <div class="hr"></div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+        <div class="team-grid" id="teamGrid"></div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-top">
+        <!-- Brand / Logo -->
+        <div class="footer-brand">
+            <img src="assets/icon.png" alt="Nuvion Client" class="footer-logo" />
+            <div class="footer-brand-text">
+                <div class="footer-brand-title">NUVION CLIENT</div>
+                <div class="footer-brand-sub">Performance • Style • Features</div>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+            <!--<div class="footer-col-title">Resources</div>
+            <a class="footer-link" href="blog.html">Blog</a>
+            <a class="footer-link" href="changelog.html">Changelogs</a>
+            <a class="footer-link" href="api.html">API Docs</a>-->
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+            <div class="footer-col-title">Legal</div>
+            <a class="footer-link" href="impressum.html">Impressum</a>
+            <a class="footer-link" href="datenschutz.html">Privacy Policy</a>
+            <a class="footer-link" href="terms.html">Terms of Service</a>
+        </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="container footer-bottom">
+        <div class="footer-copy">© <span id="year"></span> Nuvion Client. All rights reserved.</div>
+        <div class="footer-disclaimer">Not affiliated with Minecraft or Mojang.</div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="js/team.js"></script>
+</body>
+</html>

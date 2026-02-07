@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <title>Nuvion Client</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">
+            <img src="assets/icon.png" alt="Nuvion Logo">
+            <div>
+                <div class="title">Nuvion Client</div>
+                <div class="sub">Performance • Style • Features</div>
+            </div>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="https://discord.gg/DEIN_INVITE" target="_blank" rel="noreferrer">Discord</a>
+            <a class="btn small ghost" href="impressum.html">Impressum</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-grid">
+            <div>
+                <h1>Der futuristische Minecraft Client für Performance & Style.</h1>
+                <p class="lead">
+                    Nuvion bringt dir eine moderne UI, starke Features und ein flüssiges Spielerlebnis —
+                    clean, schnell und optisch on point.
+                </p>
+
+                <div class="downloads">
+                    <a class="btn primary" href="#" id="dlPrimary">Download</a>
+                    <a class="btn" href="#features">Features</a>
+                    <a class="btn" href="#discord">Discord</a>
+                </div>
+
+                <div class="mini-note" style="margin-top:10px;">
+                    Hinweis: Nicht offiziell mit Minecraft oder Mojang/Microsoft verbunden.
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="assets/banner.png" alt="Nuvion Banner">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES + DOWNLOAD PANELS -->
+    <section class="section" id="features">
+        <div class="grid-2">
+            <div class="card">
+                <div class="split">
+                    <div>
+                        <h2>Das Wichtigste</h2>
+                        <p style="margin:10px 0 0;">
+                            Ein fokussierter Client, der Performance & Optik verbindet. Du bekommst ein
+                            modernes Erlebnis ohne unnötiges Chaos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="kpis">
+                    <div class="kpi">
+                        <div class="big">Smooth</div>
+                        <div class="small">Optimierte Experience</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="big">Modern</div>
+                        <div class="small">Futuristisches Design</div>
+                    </div>
+                    <div class="kpi">
+                        <div class="big">Clean</div>
+                        <div class="small">Fokus auf das Wesentliche</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Download</h2>
+                <p style="margin:10px 0 0;">
+                    Wähle dein Betriebssystem. (Links sind Platzhalter — später z.B. GitHub Releases/CDN.)
+                </p>
+
+                <div class="downloads">
+                    <a class="btn primary" href="#" id="dlWindows">Windows</a>
+                    <a class="btn" href="#" id="dlMac">macOS</a>
+                    <a class="btn" href="#" id="dlLinux">Linux</a>
+                </div>
+
+                <div class="mini-note" style="margin-top:10px;">
+                    Tipp: Du kannst die Links später auch auf deine eigene API/Redirects zeigen lassen.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFORMANCE PROOF (Badlion-inspiriert) -->
+    <section class="section">
+        <div class="card">
+            <div class="split">
+                <div>
+                    <h2>Performance, die du fühlst</h2>
+                    <p style="margin:10px 0 0;">
+                        FPS-Boost, weniger Input-Lag und ein smootheres Feeling — gebaut für Spieler, die’s ernst meinen.
+                    </p>
+                </div>
+                <div class="pill">FPS Focus</div>
+            </div>
+
+            <div class="kpis">
+                <div class="kpi">
+                    <div class="big">↑ FPS</div>
+                    <div class="small">Optimierungen & Tuning</div>
+                </div>
+                <div class="kpi">
+                    <div class="big">↓ Lag</div>
+                    <div class="small">Smoother Workflow</div>
+                </div>
+                <div class="kpi">
+                    <div class="big">UI</div>
+                    <div class="small">Modern & übersichtlich</div>
+                </div>
+            </div>
+
+            <div class="mini-note" style="margin-top:10px;">
+                (Zahlen kannst du später mit echten Benchmarks ersetzen – Badlion macht so “Proof”-Blöcke ebenfalls prominent.) :contentReference[oaicite:3]{index=3}
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCORD (direkt sichtbar) -->
+    <section class="section" id="discord">
+        <div class="grid-2">
+            <div class="card">
+                <h2>Discord Community</h2>
+                <p style="margin:10px 0 0;">
+                    Updates, Support und Tester – alles auf Discord.
+                </p>
+                <br>
+                <iframe
+                        src="https://discord.com/widget?id=1465802113274613812&theme=dark"
+                        width="350"
+                        height="500"
+                        allowtransparency="true"
+                        frameborder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+                </iframe>
+                <br>
+                <div class="downloads" style="margin-top:12px;">
+                    <a class="btn primary" href="https://discord.gg/DEIN_INVITE" target="_blank" rel="noreferrer">Werde Teil der Nuvion Client Community</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-top">
+        <!-- Brand / Logo -->
+        <div class="footer-brand">
+            <img src="assets/icon.png" alt="Nuvion Client" class="footer-logo" />
+            <div class="footer-brand-text">
+                <div class="footer-brand-title">NUVION CLIENT</div>
+                <div class="footer-brand-sub">Performance • Style • Features</div>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+            <!--<div class="footer-col-title">Resources</div>
+            <a class="footer-link" href="blog.html">Blog</a>
+            <a class="footer-link" href="changelog.html">Changelogs</a>
+            <a class="footer-link" href="api.html">API Docs</a>-->
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+            <div class="footer-col-title">Legal</div>
+            <a class="footer-link" href="impressum.html">Impressum</a>
+            <a class="footer-link" href="datenschutz.html">Privacy Policy</a>
+            <a class="footer-link" href="terms.html">Terms of Service</a>
+        </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="container footer-bottom">
+        <div class="footer-copy">© <span id="year"></span> Nuvion Client. All rights reserved.</div>
+        <div class="footer-disclaimer">Not affiliated with Minecraft or Mojang.</div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
